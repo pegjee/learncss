@@ -1,0 +1,35 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/* Header/logo Title */
+.header {
+  font size: 22px;
+  text-align: center;
+  color: #cdo470;
+}
+
+body {
+    background-color: gold;   
+    font-family: Helvetica, Calibri, Arial, Sans-serif;
+  
+}
+
+*wrapper{
+         width: 1000px;
+         margin: 0 auto;
+         background-color: white}
+
+.flex-container {
+                display: flex;
+                flex-flow: row ;
+                justify-content: space-around
+                background-color: white;
+}
+
+.flex-container>div {
+                     background-color: white;
+                     top-margin: 12px;
+                     font size: 23px;
+
+
+
