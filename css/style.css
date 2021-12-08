@@ -2,10 +2,10 @@
 /* CSS Document */
 
 /* Header/logo Title */
-.header {
-  font size: 22px;
-  text-align: center;
-  color: #cdo470;
+header {
+  align-items: center;
+  margin: auto;
+  width: 1000px;
 }
 
 body {
@@ -24,60 +24,129 @@ body {
          flex-flow: wrap;
         }
 
-.flex-container {
-                display: flex;
-                flex-flow: row ;
-                justify-content: space-around
-                background-color: white;
-}
-
-.flex-container>div {
-                     background-color: white;
-                     top-margin: 12px;
-                     font size: 23px;}
-
-
-#inner-wrapper {
-          width: 99%;
-         margin: auto;
-         background-color: white;
-         font-size: 100px;
-
-}
+#inner-wrapper{
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  
+}        
 
 nav {
   font-size: 23px;
   margin-top: 12px;
   margin: auto;
-  border-style: dotted;
-  width: 1000px;
+  padding: 0;
+  border-style: none;
+  width: 100%;
 }
 
-ul {
-  display: flex;
-  text-align: justify;
+nav ul {
   list-style-type: none;
-  margin: auto;
-  border-style: solid;
-
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-li{
-  float: left;
-border-style: dashed;
+nav ul li{
+  display: inline;
 }
 
-li a{
-  display: block;
-  padding: 8px;
+nav ul li a{
   text-decoration-line: none;
   color: #53341f;
+  
   margin: auto;
+}
 
+
+nav ul li a:hover {
+  color: #888;
+}
+
+nav ul li .current_page {
+  color: #cda470;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 22px;
+  text-align: left;
+  color: #cda470;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 19px;
+  text-align: left;
+  color: #53341f;
+  margin-top: 15px;
+}
+
+main {
+  margin-top: 26px;
+  display: flex;
+  
+  justify-content: space-between;
+  width: 100%;
   
 }
 
+main a {
+  color: #cda470;
+  text-decoration-line: none;
+}
 
-li a:hover {
-  color: #888;
+.column {
+  display: inline-block;
+  width: 100%;
+  
+}
+
+main a:hover{
+  text-decoration-line: underline;
+}
+
+main p{
+  margin-top: 15px;
+  font-size: 13px;
+  width: 90%;
+  text-align: justify;
+}
+
+main img{
+  margin-top: 20px;
+}
+
+footer {
+  font-size: 11px;
+  color: #5d3619;
+  width: 1000px;
+}
+
+footer ul {
+  display: flex;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+}
+
+footer ul li {
+  display: inline;
+  padding: 10px;
+}
+
+footer ul li a{
+  color: #5d3619;
+  text-decoration-line: none;
+
+
+
+}
+
+footer ul li a:hover{
+  text-decoration-line: underline;
 }
