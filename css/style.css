@@ -9,15 +9,20 @@
 }
 
 body {
-    background-color: gold;   
+    background-color: #5d3619;
     font-family: Helvetica, Calibri, Arial, Sans-serif;
   
 }
 
-*wrapper{
+#wrapper{
          width: 1000px;
-         margin: 0 auto;
-         background-color: white}
+         margin: auto;
+         background-color: white;
+         padding: 10px;
+         margin-top: 25px;
+         display: flex;
+         flex-flow: wrap;
+        }
 
 .flex-container {
                 display: flex;
@@ -29,7 +34,50 @@ body {
 .flex-container>div {
                      background-color: white;
                      top-margin: 12px;
-                     font size: 23px;
+                     font size: 23px;}
 
 
+#inner-wrapper {
+          width: 99%;
+         margin: auto;
+         background-color: white;
+         font-size: 100px;
 
+}
+
+nav {
+  font-size: 23px;
+  margin-top: 12px;
+  margin: auto;
+  border-style: dotted;
+  width: 1000px;
+}
+
+ul {
+  display: flex;
+  text-align: justify;
+  list-style-type: none;
+  margin: auto;
+  border-style: solid;
+
+}
+
+li{
+  float: left;
+border-style: dashed;
+}
+
+li a{
+  display: block;
+  padding: 8px;
+  text-decoration-line: none;
+  color: #53341f;
+  margin: auto;
+
+  
+}
+
+
+li a:hover {
+  color: #888;
+}
